@@ -1,0 +1,207 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5860,        199]
+NotebookOptionsPosition[      4867,        160]
+NotebookOutlinePosition[      5201,        175]
+CellTagsIndexPosition[      5158,        172]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[" Finding x_min for F(2, 53, -1021, 1024)", "Item",
+ CellChangeTimes->{{3.713661090168419*^9, 3.713661102480184*^9}, {
+  3.7136620713795567`*^9, 3.713662071381752*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"x", " ", "=", " ", 
+  RowBox[{"N", "[", 
+   RowBox[{
+    RowBox[{"2", "^", 
+     RowBox[{"(", 
+      RowBox[{"-", "1022"}], ")"}]}], ",", " ", "25"}], "]"}], " "}]], "Input",\
+
+ CellChangeTimes->{{3.713661106543285*^9, 3.713661117801156*^9}, {
+  3.7136614371152697`*^9, 3.713661437684237*^9}, {3.713882580944828*^9, 
+  3.7138826435430202`*^9}}],
+
+Cell[BoxData["2.2250738585072013830902327173324040642192159804623318305533`26.\
+*^-308"], "Output",
+ CellChangeTimes->{
+  3.713661118383719*^9, 3.7136614388537903`*^9, {3.713882585021387*^9, 
+   3.7138826224068937`*^9}}]
+}, Open  ]],
+
+Cell["Finding x_min+ for same F system", "Item",
+ CellChangeTimes->{{3.713661120998704*^9, 3.713661129765273*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"y", " ", "=", " ", 
+  RowBox[{"N", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], " ", "+", " ", 
+       RowBox[{"1", "/", 
+        RowBox[{"(", 
+         RowBox[{"2", "^", 
+          RowBox[{"(", "53", ")"}]}], ")"}]}]}], ")"}], "*", 
+     RowBox[{"2", "^", 
+      RowBox[{"-", "1021"}]}]}], ",", " ", "25"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7136611319957943`*^9, 3.7136611653743362`*^9}, {
+  3.713661442654799*^9, 3.713661442996348*^9}, {3.713882646747735*^9, 
+  3.713882647117284*^9}}],
+
+Cell[BoxData["2.2250738585072018771558785585789482407880088486837041956131`26.\
+*^-308"], "Output",
+ CellChangeTimes->{3.713661165967905*^9, 3.713661443414197*^9}]
+}, Open  ]],
+
+Cell["Finding absolute error between x and y", "Item",
+ CellChangeTimes->{{3.713661446773978*^9, 3.713661454587309*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"abs_minerror", " ", "=", " ", 
+  RowBox[{"N", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"2", "^", 
+       RowBox[{"(", 
+        RowBox[{"-", "1022"}], ")"}]}], ")"}], " ", "-", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"1", "/", "2"}], " ", "+", " ", 
+        RowBox[{"1", "/", 
+         RowBox[{"(", 
+          RowBox[{"2", "^", 
+           RowBox[{"(", "53", ")"}]}], ")"}]}]}], ")"}], "*", 
+      RowBox[{"2", "^", 
+       RowBox[{"-", "1021"}]}]}]}], ",", " ", "26"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.713661459210166*^9, 3.7136615391893044`*^9}, {
+  3.713661588659699*^9, 3.7136617883606052`*^9}, {3.713662175003582*^9, 
+  3.713662195219921*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  "4.9406564584124654417656879286822137236505980261432476442558568`26.*^-324"}\
+]], "Output",
+ CellChangeTimes->{3.713661789511725*^9, 3.713662196455927*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713661521203494*^9, 3.713661521210021*^9}, {
+  3.713661571288632*^9, 3.713661583009007*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Finding x_max- as approximation to x_max", "Item",
+ CellChangeTimes->{{3.713662035739936*^9, 3.7136620571797447`*^9}}],
+
+Cell["Find its absolute error", "Item",
+ CellChangeTimes->{{3.713662035739936*^9, 3.7136620634489927`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[" "], "Input",
+ CellChangeTimes->{3.713662033818782*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"abs_maxerror", " ", "=", " ", 
+  RowBox[{"N", "[", " ", 
+   RowBox[{
+    RowBox[{"Abs", "[", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", " ", "-", " ", 
+         RowBox[{"2", "^", 
+          RowBox[{"-", "1021"}]}]}], ")"}], "*", 
+       RowBox[{"2", "^", "1024"}]}], " ", "-", " ", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"2", "^", "1024"}], ")"}], "*", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{"2", "*", 
+          RowBox[{"2", "^", 
+           RowBox[{"(", 
+            RowBox[{"-", "1021"}], ")"}]}]}]}], ")"}]}]}], " ", "]"}], ",", 
+    " ", "26"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7136621705863333`*^9, 3.71366228322064*^9}}],
+
+Cell[BoxData["8.`26."], "Output",
+ CellChangeTimes->{3.7136622870717287`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713661586036663*^9, 3.713661586049251*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.713661494450987*^9, 3.713661495538207*^9}}]
+},
+WindowSize->{1600, 813},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 11, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 173, 2, 31, "Item"],
+Cell[CellGroupData[{
+Cell[756, 26, 368, 10, 32, "Input"],
+Cell[1127, 38, 220, 4, 34, "Output"]
+}, Open  ]],
+Cell[1362, 45, 114, 1, 31, "Item"],
+Cell[CellGroupData[{
+Cell[1501, 50, 571, 16, 32, "Input"],
+Cell[2075, 68, 163, 2, 34, "Output"]
+}, Open  ]],
+Cell[2253, 73, 120, 1, 31, "Item"],
+Cell[CellGroupData[{
+Cell[2398, 78, 735, 21, 32, "Input"],
+Cell[3136, 101, 186, 4, 34, "Output"]
+}, Open  ]],
+Cell[3337, 108, 141, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[3503, 114, 124, 1, 31, "Item"],
+Cell[3630, 117, 107, 1, 31, "Item"]
+}, Open  ]],
+Cell[3752, 121, 69, 1, 32, "Input"],
+Cell[CellGroupData[{
+Cell[3846, 126, 735, 22, 32, "Input"],
+Cell[4584, 150, 77, 1, 32, "Output"]
+}, Open  ]],
+Cell[4676, 154, 92, 1, 32, "Input"],
+Cell[4771, 157, 92, 1, 32, "Input"]
+}
+]
+*)
+
