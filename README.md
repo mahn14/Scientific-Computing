@@ -15,5 +15,5 @@ project course for Computer Science majors.
 I apologize for not posting the actual problems themselves, as I lost access to the portal upon graduation and did not download a copy of the problem document to my local machine.
 
 **DISCLAIMER
-Many of the function implementations in this repo was given by Dr Lin before being editted to solve assigned problems
-Assignments and code in this repo are posted as submitted prior to grading or corrections
+Many of the function implementations in this repo was given by Dr Lin with instructions to fix/alter before applying to solve homework problems.  
+Assignments and code in this repo are posted as submitted prior to grading or corrections.
